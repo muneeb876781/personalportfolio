@@ -74,9 +74,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 95%;
+    height: 97%;
     width: 97%;
-    position: relative; /* Ensure relative positioning for the sticky element */
+    position: relative; 
     background-color: #101624;
     border: 5px solid #0A101E;
 }
@@ -559,6 +559,93 @@
     .projectcard{
         width: 80%;
     }
+
+}
+
+@media (max-width: 600px){
+    .main{
+        height: 100dvh;
+    }
+
+    .contentcontainer{
+        width: 90%;
+        height: 90%;
+    }
+
+    .herosection{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .herosectioncontent{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .herosectioncontent h1,h2,p{
+        text-align: center;
+    }
+
+    .herosectioncontent h1{
+        font-size: 20px;
+    }
+
+    .herosectioncontent p{
+        font-size: 13px;
+    }
+
+    .herobtns{
+        flex-direction: column;
+    }
+
+    .socialmediaicons{
+        padding: 15px 0;
+    }
+
+    .herosectionimg{
+        width: 100%;
+    }
+
+    .herosectionimg img{
+        width: 60%;
+    }
+
+    .experties{
+        height: auto;
+    }
+
+    .expertiescards{
+        flex-wrap: wrap;
+    }
+
+    .expertycard{
+        width: 100%;
+    }
+
+    .experties p{
+        padding: 0 10px;
+    }
+
+    .projects{
+        height: auto;
+    }
+
+    .projectcard{
+        width: 100%;
+    }
+
+    .projectcard h2{
+        font-size: 14px;
+    }
+
+
+    .projectcard p{
+        font-size: 11px;
+    }
+
+   
     
 }
 

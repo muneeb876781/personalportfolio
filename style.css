@@ -563,6 +563,10 @@
 }
 
 @media (max-width: 600px){
+    .main{
+        height: 100dvh;
+    }
+
     .contentcontainer{
         width: 90%;
         height: 90%;

@@ -563,6 +563,11 @@
 }
 
 @media (max-width: 600px){
+    .contentcontainer{
+        width: 90%;
+        height: 90%;
+    }
+
     .herosection{
         flex-direction: column-reverse;
         height: auto;
@@ -625,6 +630,15 @@
 
     .projectcard{
         width: 100%;
+    }
+
+    .projectcard h2{
+        font-size: 14px;
+    }
+
+
+    .projectcard p{
+        font-size: 11px;
     }
 
    

@@ -269,6 +269,8 @@
     border: 2px solid #FEC544;
 }
 
+/* ---------------------------------------------- */
+
 .experties{
     display: flex;
     justify-content: center;
@@ -445,7 +447,123 @@
     width: 50%;
 }
 
-@media (max-width: 528px) {
+@media (max-width: 1100px){
+    .projectcard{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1000px){
+    .herosection{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .herosectioncontent{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .herosectioncontent h1,h2,p{
+        text-align: center;
+    }
+
+    .herobtns{
+        flex-direction: column;
+    }
+
+    .socialmediaicons{
+        padding: 15px 0;
+    }
+
+    .herosectionimg{
+        width: 80%;
+    }
+
+    .experties{
+        height: auto;
+    }
+
+    .expertiescards{
+        flex-wrap: wrap;
+    }
+
+    .expertycard{
+        width: 45%;
+    }
+
+    .projects{
+        height: auto;
+    }
+
+    .projectcard{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1000px){
+    .herosection{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .herosectioncontent{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .herosectioncontent h1,h2,p{
+        text-align: center;
+    }
+
+    .herosectioncontent h1{
+        font-size: 20px;
+    }
+
+    .herosectioncontent p{
+        font-size: 13px;
+    }
+
+    .herobtns{
+        flex-direction: column;
+    }
+
+    .socialmediaicons{
+        padding: 15px 0;
+    }
+
+    .herosectionimg{
+        width: 80%;
+    }
+
+    .experties{
+        height: auto;
+    }
+
+    .expertiescards{
+        flex-wrap: wrap;
+    }
+
+    .expertycard{
+        width: 80%;
+    }
+
+    .projects{
+        height: auto;
+    }
+
+    .projectcard{
+        width: 80%;
+    }
+}
+
+
+
+/* @media (max-width: 528px) {
     .statscontentbody {
         overflow-y: scroll; 
     }
@@ -506,10 +624,10 @@
         width: 100%;
         margin-bottom: 20px;
     }
-}
+} */
 
 
-@media (max-width: 628px) {
+/* @media (max-width: 628px) {
     .statscontentbody {
         overflow-y: scroll; 
     }
@@ -554,8 +672,6 @@
     .experties h1 {
         font-size: 28px;
     }
-
-    
 
     .experties p {
         padding: 0 20px;
@@ -659,5 +775,5 @@
     .projectcard{
         width: 100%;
     }
-}
+} */
 

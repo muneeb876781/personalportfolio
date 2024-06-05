@@ -401,7 +401,51 @@
     text-align: center;
 }
 
-@media (max-width: 768px) {
+.contactsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+}
+
+.contactsec h1{
+    font-size: 32px;
+    font-weight: 300;
+    color: #FEC544;
+    text-transform: uppercase;
+}
+
+.contactbody{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.contactbodyimg{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contactbodyimg img{
+    width: 100%;
+    height: auto;
+}
+
+.contactbodycontent{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+@media (max-width: 528px) {
     .statscontentbody {
         overflow-y: scroll; 
     }
@@ -439,9 +483,15 @@
         width: 60%;
     }
 
+    .experties{
+        padding: 10px 0;
+    }
+
     .experties h1 {
         font-size: 28px;
     }
+
+    
 
     .experties p {
         padding: 0 20px;
@@ -455,6 +505,112 @@
     .expertycard {
         width: 100%;
         margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 628px) {
+    .statscontentbody {
+        overflow-y: scroll; 
+    }
+
+    .herosection {
+        flex-direction: column;
+    }
+
+    .herosectioncontent, .herosectionimg {
+        width: 100%;
+    }
+
+    .herosectioncontent h2 {
+        font-size: 18px;
+    }
+
+    .herosectioncontent h1 {
+        font-size: 22px;
+    }
+
+    .herosectioncontent p {
+        font-size: 12px;
+    }
+
+    .socialmediaicons a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .resumebtn a {
+        font-size: 14px;
+    }
+
+    .herosectionimg img {
+        width: 60%;
+    }
+
+    .experties{
+        padding: 10px 0;
+    }
+
+    .experties h1 {
+        font-size: 28px;
+    }
+
+    
+
+    .experties p {
+        padding: 0 20px;
+        font-size: 12px;
+    }
+
+    .expertiescards {
+        flex-direction: column;
+    }
+
+    .expertycard {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 764px) {
+    .herosectioncontent {
+        padding: 10px;
+    }
+
+    .herosectioncontent h2 {
+        font-size: 20px;
+    }
+
+    .herosectioncontent h1 {
+        font-size: 24px;
+    }
+
+    .herosectioncontent p {
+        font-size: 13px;
+    }
+
+    .resumebtn a {
+        font-size: 15px;
+    }
+
+    .socialmediaicons a {
+        font-size: 14px;
+    }
+
+    .herosectionimg img {
+        width: 50%;
+    }
+
+    .experties h1 {
+        font-size: 30px;
+    }
+
+    .expertiescards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .expertycard {
+        width: 100%;
     }
 }
 
@@ -499,4 +655,9 @@
     .expertycard {
         width: 45%;
     }
+
+    .projectcard{
+        width: 100%;
+    }
 }
+

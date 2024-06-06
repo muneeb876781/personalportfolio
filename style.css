@@ -57,7 +57,8 @@
     flex-direction: row;
     height: 80%;
     width: 80%;
-    background: #101624;
+    /* background: rgb(16, 22, 36); */
+    background-color: rgba(16, 22, 36, 0.5); 
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     z-index: 2;
 }
@@ -71,7 +72,9 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    background: #101624;
+    /* background: #101624; */
+    background-color: rgba(16, 22, 36, 0.5); 
+
 }
 
 .statscontent {
@@ -82,7 +85,9 @@
     height: 97%;
     width: 97%;
     position: relative; 
-    background-color: #101624;
+    /* background-color: #101624; */
+    background-color: rgba(16, 22, 36, 0.5); 
+
     border: 5px solid #0A101E;
 }
 

@@ -36,6 +36,11 @@
     animation: slide-left 6s linear infinite; 
 }
 
+.main .bgtext span{
+    color: #FEC544;
+}
+
+
 @keyframes slide-left {
     0% {
         transform: translateX(0%);

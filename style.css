@@ -270,15 +270,39 @@
     height: auto;
 }
 
-.herosectionimg img{
+.herosectionimg img {
     width: 40%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 30% 70% 70% 30% / 30% 65% 35% 70%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     padding: 10px;
     border: 2px solid #FEC544;
+    transition: 0.3s ease-in-out;
+    animation: changeBorderRadius 5s infinite linear;
 }
 
+@keyframes changeBorderRadius {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 65% 35% 70%;
+    }
+    25% {
+        border-radius: 50% 30% 70% 50% / 30% 65% 35% 70%;
+    }
+    50% {
+        border-radius: 10% 90% 20% 80% / 30% 65% 35% 70%;
+    }
+    75% {
+        border-radius: 70% 50% 20% 80% / 30% 65% 35% 70%;
+    }
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 65% 35% 70%;
+    }
+}
+
+
+.herosectionimg img:hover{
+    border-radius: 76% 24% 66% 34% / 54% 72% 28% 46%;
+}
 /* ---------------------------------------------- */
 
 .experties{
@@ -736,6 +760,32 @@
     }
 }
 
+/* ----------------------------------- */
 
+.cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px #FEC544;
+    border: 1px solid #FEC544;
+    pointer-events: none;
+    transform: translate(-70%, -70%);
+    transition: transform 3s ease-in-outs, background-color 0.2s;
+    z-index: 1000;
+}
 
+/* Initial state */
+.herosection {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Animation when in viewport */
+.herosection.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 

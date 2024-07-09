@@ -11,7 +11,10 @@
 
 <body>
     <div class="main">
-        <h1 class="bgtext">muneeb <span>ahmed</span> muneeb <span>ahmed</span> muneeb <span>ahmed</span> muneeb <span>ahmed</span></h1>
+        <div class="cursor"></div>
+        <h1 class="bgtext">muneeb <span>ahmed</span> muneeb <span>ahmed</span> muneeb <span>ahmed</span> muneeb
+            <span>ahmed</span>
+        </h1>
         <div class="contentcontainer">
             <div class="stats">
                 <div class="statscontent">
@@ -48,9 +51,7 @@
                                     </div>
                                     <div class="resumebtn">
                                         <a href="resume.pdf" target="_blank">Resume</a>
-
                                     </div>
-
                                 </div>
                             </div>
                             <div class="herosectionimg">
@@ -169,8 +170,7 @@
                                         class="fab fa-github"></i></a>
                                 <a target="_blank" href="https://www.linkedin.com/in/iamuneebahmed/"><i
                                         class="fab fa-linkedin-in"></i></a>
-                                <a target="_blank"
-                                    href="https://www.facebook.com/profile.php?id=100043152906285"><i
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100043152906285"><i
                                         class="fab fa-facebook-f"></i></a>
                                 <a target="_blank" href="https://www.instagram.com/mun33b_4hm3d/"><i
                                         class="fab fa-instagram"></i></a>
@@ -215,6 +215,55 @@
                     });
                 }).scroll();
             });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const cursor = document.querySelector('.cursor');
+
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = `${e.pageX}px`;
+                    cursor.style.top = `${e.pageY}px`;
+                });
+
+                document.querySelector('h1').addEventListener('mouseenter', () => {
+                    cursor.style.backgroundColor = 'rgba(255, 0, 0, 0.5)';
+                });
+
+                document.querySelector('h1').addEventListener('mouseleave', () => {
+                    cursor.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+                });
+            });
+
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                function isElementInViewport(elem) {
+                    var $elem = $(elem);
+                    var viewportTop = $(window).scrollTop();
+                    var viewportBottom = viewportTop + $(window).height();
+                    var elemTop = $elem.offset().top;
+                    var elemBottom = elemTop + $elem.height();
+                    return (elemTop <= viewportBottom && elemBottom >= viewportTop);
+                }
+
+                function checkAnimation() {
+                    $('.statscontentbody > div').each(function () {
+                        if (isElementInViewport(this)) {
+                            $(this).addClass('animate');
+                        } else {
+                            $(this).removeClass('animate');
+                        }
+                    });
+                }
+
+                $(window).on('scroll resize', function () {
+                    checkAnimation();
+                });
+
+                $(window).trigger('scroll');
+            });
+
         </script>
 </body>
 
